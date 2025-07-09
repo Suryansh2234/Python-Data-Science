@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fit Track Pro - Member Registration</title>
+    <title>Fit Track Pro - Member Login</title>
     <style>
         * {
             margin: 0;
@@ -124,7 +124,43 @@
             flex: 1;
         }
         
-        .btn-register {
+        .btn-login {
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            width: 100%;
+        }
+        
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .forgot-password {
+            text-align: right;
+            margin-top: 8px;
+        }
+        
+        .forgot-password a {
+            color: #764ba2;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        
+        .forgot-password a:hover {
+            color: #4fd1c5;
+            text-decoration: underline;
+        }
             background: linear-gradient(to right, #667eea, #764ba2);
             color: white;
             border: none;
@@ -178,64 +214,29 @@
             <div class="brand-title">
                 <span class="brand-fit">Fit</span><span class="brand-track">Track</span> <span class="brand-pro">Pro</span>
             </div>
-            <h1>Create Your Account</h1>
-            <p>Join our fitness community for better health</p>
+            <h1>Welcome Back</h1>
+            <p>Sign in to access your fitness dashboard</p>
         </div>
         
-        <form class="register-form">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" placeholder="Enter your first name" required>
-                </div>
-                <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" placeholder="Enter your last name" required>
-                </div>
-            </div>
-            
+        <form class="login-form">
             <div class="form-group">
                 <label for="email">Email Address</label>
                 <input type="email" id="email" placeholder="Enter your email" required>
             </div>
             
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Create a password" required>
-                </div>
-                <div class="form-group">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
-                </div>
-            </div>
-            
             <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="Enter your phone number">
-            </div>
-            
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="birthDate">Date of Birth</label>
-                    <input type="date" id="birthDate">
-                </div>
-                <div class="form-group">
-                    <label for="gender">Gender</label>
-                    <select id="gender" class="form-group input">
-                        <option value="">Select gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
                 </div>
             </div>
             
-            <button type="submit" class="btn-register">Register Now</button>
+            <button type="submit" class="btn-login">Login</button>
         </form>
         
         <div class="login-link">
-            Already have an account? <a href="#">Log in</a>
+            Don't have an account? <a href="#">Register</a>
         </div>
     </div>
 </body>
